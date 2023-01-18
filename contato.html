@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width">
+        <title>Barbearia Alura</title>
+        <link rel = "shortcut icon" href = "logo-branco.png">
+        <link rel = "stylesheet" href = "reset.css">
+        <link rel = "stylesheet" href = "style.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+
+        <!--cabeçalho da pagina -->
+        <header class = "cabeçalho">
+            <img src="logo-branco.png" alt="logo barbearia alura" class="logo">
+
+            <nav>
+                <ul>
+                    <li><a href = "index.html">home</a></li>
+                    <li><a href = "produtos.html">produtos</a></li>
+                    <li><a href = "contato.html">contato</a></li>
+                </ul>
+            </nav>    
+        </header>
+        
+        <!--formulario da barbearia-->
+        <main>
+            <img src="barbearia SEXTOOU!.png" alt="homem cortando o cabelo" class = "ilustração">
+
+            <form class = "container-formulario">
+                <div class = "conteudo-formulario">
+                    <label for = "nomesobrenome" class = "titulo">Nome e Sobrenome.</label>
+                    <input id = "nomesobrenome" type = "text" class = "input-padrão" required>
+
+                    <label for = "Email" class = "titulo">Email.</label>
+                    <input id = "Email" type = "email" class = "input-padrão" required placeholder = "exemplo@hotmail.com">
+
+                    <label for = "Telefone" class = "titulo">Telefone.</label>
+                    <input id = "Telefone" type = "tel" class = "input-padrão" required placeholder = "(xx) x xxxx-xxxx">
+
+                    <label for = "mensagem" class = "titulo">Mensagem</label>
+                    <textarea cols = "10" rows = "10" id = "mensagem" required></textarea>
+                </div> 
+
+                <fieldset class = "forma-de-contato">
+                    <legend>Como prefere o nosso contato?</legend>
+                    
+                    <label for = "radio-telefone"><input type = "radio" id = "radio-telefone" value = "tel" name = "contato" class = "contato" required>telefone</label>
+                    
+                    <label for = "radio-email"><input type = "radio" id = "radio-email" name = "contato" value = "Email" class = "contato">Email</label>
+
+                    <label for = "radio-whatsapp"><input type = "radio" id = "radio-whatsapp" name = "contato" value = "whatsapp" class = "contato">Whatsapp</label>   
+                </fieldset>
+
+                <fieldset class = "horarios">
+                    <legend>Qual horário prefere ser atendido?</legend>
+
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+
+                <fieldset class = "notificação">
+                    <label class = "checkbox">
+                        <input type = "checkbox" checked>Gostaria de receber nossas novidades por e-mail?
+                    </label>
+                </fieldset>
+
+                <div class = "botão-de-enviar">
+                    <input type = "submit", value = "enviar formulário" class = "enviar">
+                </div>
+
+                <fieldset class = "container-tabela">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Dia</th>
+                                <th>Horario</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Segunda</td>
+                                <td>8h ~ 20h</td>
+                            </tr>
+                            <tr>
+                                <td>Quarta</td>
+                                <td>8h ~ 20h</td>
+                            </tr>
+                            <tr>
+                                <td>Sexta</td>
+                                <td>8h ~ 20h</td>
+                            </tr>
+                        </tbody>  
+                    </table>
+                </fieldset>
+            </form>
+         </main>
+
+        <!--Rodape da pagina-->
+        <footer class = "rodape">
+            <div class = "logotipo">
+                <img src="logo-branco.png" alt="logo da barbearia alura" class = "logo-rodape">
+            </div>
+
+            <div class = "midias-sociais">
+                <a class = "icon" href = "#"><i class = "fa fa-facebook"></i></a>
+                <a class = "icon" href = "#"><i class = "fa fa-instagram"></i></a>
+                <a class = "icon" href = "#"><i class = "fa fa-twitter"></i></a>
+                <a class = "icon" href = "#"><i class = "fa fa-linkedin"></i></a>
+            </div>
+
+            <div class = "copy">
+                <p class = "copyright">&copy; copyright Barbearia Alura - 2023</p>
+            </div>
+        </footer>
+    </body>
+</html>

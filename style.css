@@ -1,0 +1,676 @@
+            /* Barbearia Alura*/
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #ffffff;
+    width: 100vw;
+    height: 100vh;
+}
+
+            /* Barbearia Alura - Cabeçalho */
+header {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    padding: 10px;
+}
+    .logo {
+        width: 100px;
+        padding-right: 30px;
+        border-right: solid #ffffff 2px;
+    }
+
+    nav li {    
+        display: inline-block;
+        margin: 0 20px;
+    }
+        nav a {
+            font-size: 40px;
+            font-weight: bold;
+            color: #f0f7da;
+            text-decoration: none;
+            text-transform: uppercase;
+/**/    }
+
+            /* Barbearia Alura - Cabeçalho/interação */
+
+nav a:hover {
+    font-size: 42px;
+}
+
+/* Pagina Principal - rodape */
+.rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: #000000;
+    padding: 15px;
+    box-sizing: border-box;
+
+}
+    .logo-rodape {
+        width: 120px;
+    }
+
+    .midias-sociais {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 2px;
+    }
+        .icon {
+            padding: 0 10px;
+            color: white;
+        }
+    
+    .copy p {
+        color: white;
+        font-size: 12px;
+        margin-top: 20px;
+/**/}
+
+            /* Pagina Principal - Sobre a barbearia alura */
+.caixa-apresentação {
+    background: linear-gradient(black 4%, white 10%);
+    padding-top: 30px;
+}            
+    .apresentação {
+        width: 940px;
+        margin:0 auto 40px;
+        padding: 15px;
+        box-sizing: border-box;  
+    }
+        .titulo-principal {
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+            color: #000000;
+            text-transform: uppercase;
+            margin: 20px auto;
+        }
+
+        .utensilios {
+            width: 300px;
+            float: left;
+            margin: 0 20px 20px 0;
+            border-radius: 10px;
+        }
+
+        .apresentação p {
+            margin: 0 0 38px;
+            font-size: 20px;
+            color: #000000;
+            line-height: 1.1;
+        }
+            .apresentação p em {
+                font-style: italic;
+            }
+                .apresentação p strong {
+                    font-weight: bold;
+/**/            }
+
+            /* Pagina Principal - slides */
+.content {
+    height: 520px;
+    width: 940px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    
+}
+    .slides {
+        display: flex;
+        width: 500%;
+        height: 100%;
+        
+    }
+        input {
+            display: none;
+        }
+   
+    .foto {
+        width: 20%;
+        transition: 0.6s;
+    }
+        .foto img {
+            width: 100%;
+            height: 100%;
+        }
+
+.navigation {
+    position: absolute;
+    left: 50%;
+    bottom: -70%;
+    transform: translate(-50%);
+    display: flex;
+}
+    .bar {
+        width: 70px;
+        height: 17px;
+        border: 2px solid #ffffff;
+        margin: 6px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.4s;
+/**/}
+
+            /* Pagina Principal - slides/interação */
+.bar:hover {
+    background: #ffffff;
+}
+
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1 {
+    margin-left: -20%;
+}
+
+#slide3:checked ~ .s1 {
+    margin-left: -40%;
+}
+
+#slide4:checked ~ .s1 {
+    margin-left: -60%;
+}
+
+#slide5:checked ~ .s1 {
+    margin-left: -80%;
+}
+
+            /* Pagina Principal - localização */
+.mapa { 
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 630px auto 0;
+    width: 940px;
+    padding: 20px;
+}
+    .mapa p {
+        text-align: center;
+        color: #000000;
+        font-size: 20px;
+        margin: 0 0 20px;
+    }
+
+    .mapa-conteudo {
+        display: flex;
+        align-items:center;
+        flex-direction: column;
+/**/}   
+
+            /* Pagina Principal - beneficios */
+.beneficios {
+    max-width: 940px;
+    margin: 50px auto;
+}
+    .conteudo-beneficio {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center; 
+        padding: 40px;
+    }
+        .lista-beneficio {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            width: 50%;
+            padding: auto;
+        }
+            .itens {
+                font-size: 22px;
+                border-bottom: #000000 0.5px solid;
+                margin-right: 70px;
+                transition: .6s;
+            }
+
+            .itens:before {
+                content: "★";
+            }
+
+    .imgBeneficios {
+        width: 50%;
+        border-radius: 10px;
+        margin-right: auto;
+        transition: .6s;
+/**/}
+
+            /* Pagina Principal - beneficios/interação */
+.itens:hover {
+    margin-left: 10px;
+}
+
+.imgBeneficios:hover {
+    transform: scale(1.04);
+}
+
+            /* Pagina Principal - video */
+.caixa-do-video {
+    background: linear-gradient(white 85%, black 98%);
+}
+    .mostrando-nosso-dia {
+        width: 940px;
+        height: 400px;
+        margin: 50px auto 0;
+        padding: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: top; 
+    }   
+        .video {
+            width: 50%;
+            float: left;
+        }
+
+        .video-legenda {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            width: 50%;
+            margin-left: 50px;
+            padding: 10px 0 10px 0;
+        }
+            .titulo-video {
+                font-weight: bold;
+                font-size: 40px;
+            }
+            
+            .paragrago-video {
+                font-size: 25px;
+            }
+
+            .botão {
+                width: 120px;
+                height: 50px;
+                border-radius: 25px;
+                border: none;
+                background: white;
+                border: #000000 solid 1.9px;
+                transition: .6s;
+            }
+                .botão a {
+                    font-family: 'Montserrat', sans-serif;
+                    text-decoration: none;
+                    font-size: 17px;
+                    color: #000000;
+                    transition: .6s;
+                    padding: 6px;
+/**/            }   
+
+            /* Pagina Principal - video/interação */
+.botão:hover {
+    transform: scale(1.05);
+    background: #000000;
+}
+
+.botão a:hover {
+    color: #ffffff;
+}  
+
+                /* PAGINA DE PRODUTOS */
+            /* AGINA DE PRODUTOS - produtos*/
+.container-produtos {
+    background: linear-gradient(black 2%, white 10%, white 85%, black 98%);
+    padding-top: 30px;
+    height: 570px;
+}
+    .produtos {
+        width: 940px;
+        margin: 0 auto;
+        padding: 50px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+        .produtos li {
+            box-sizing: border-box;
+            text-align: top;
+            width: 30%;
+            margin: 0 2%;
+            padding: 30px 20px;
+            border: #000000 solid 2px;
+            border-radius: 10px;
+            transition: .2s;
+        } 
+            .produtos h2 {
+                font-size: 30px;
+                font-weight: bold;
+            } 
+
+            .produto-descrição {
+                font-size: 17px;
+            }
+
+            .produto-preço {
+                font-size: 22px;
+                font-weight: bold;
+                margin-top: 10px;
+/**/        }
+
+            /* AGINA DE PRODUTOS - produtos/interação */
+.produtos li:hover {
+    border-color: #91792b;
+}
+            
+.produtos li:active {
+border-color: #C78C19;
+transform: scale(1.06);
+}
+    .produtos li:hover h2 {
+        font-size: 33px;
+/**/}
+
+                /* PAGINA DE CONTATO */
+            /* AGINA DE CONTATO - formulario */
+.ilustração {
+    position: absolute;
+    left: 860px;
+    top: 290px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px 1px #000000;
+    
+}
+
+.container-formulario {
+    background: linear-gradient(black 2%, white 10%, white 85%, black 98%);
+    padding: 110px 80px;
+    height: 1100px;
+}
+     .conteudo-formulario {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 940px;
+        margin-top: 10px;
+    }
+        .titulo {
+            display: block;
+            font-size: 25px;
+            margin: 0px 0 10px;
+        }
+
+        .input-padrão {
+            display: block;
+            margin: 0 0 20px;
+            padding: 15px 25px;
+            width: 430px;
+        }
+
+        textarea {
+            width: 480px;
+        }
+
+    .forma-de-contato {
+        display: block;
+        box-sizing: border-box;
+        
+        margin : 40px 0;
+    }
+        .forma-de-contato legend {
+            display: inline-block;
+            font-size: 20px;
+            margin: 0 0 10px;   
+        }
+
+        .forma-de-contato label {
+            display: flex;
+            flex-direction: row;
+            margin: 10px 0 0 0;
+            font-size: 20px;
+            padding: 0 10 0 0px;
+        }
+            .forma-de-contato input {
+                display: flex;
+            }
+    
+    .horarios legend {
+        font-size: 20px;
+        margin: 0 0 20px;  
+    }
+        .horarios select {
+            border-radius: 10px;
+            width: 80px;
+            height: 20px;
+            border: solid #000000 2px;
+        }            
+
+    .notificação {
+        margin: 20px 0;
+    }
+        .notificação label {
+            font-size: 20px;
+            display: flex;
+            flex-direction: row;
+        }
+            .notificação input {
+                display: flex;
+            }
+
+    .botão-de-enviar {
+        margin: 40px 0;
+    }
+        .botão-de-enviar input {
+            display: flex;
+            justify-content: center;
+            width: 190px;
+            padding: 15px 0;
+            background: orange;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            transition: 1s all;
+            cursor: pointer;
+        }
+
+    .container-tabela {
+        position: absolute;
+        left: 925px;
+        top: 1090px;
+    }
+        .container-tabela table {
+            margin: 20px 0 40px;
+        }
+            .container-tabela thead {
+                background: orange;
+                color: white;
+                font-weight: bold;   
+                
+            }
+                .container-tabela th {
+                    border: 1px solid orange;
+                    padding: 8px 15px;
+                }
+                    .container-tabela td {
+                        font-size: 25px;
+                        background: white;
+                        padding: 8px 15px;  
+                        border: 1px solid orange; 
+                    }
+            /* AGINA DE CONTATO - formulario/interação */
+.enviar:hover {
+    background: darkorange;
+    transform: scale(1.2); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    /* Adaptando o css */
+
+            /* Pagina Principal - video/interação */
+@media  screen and (max-width: 600px) {
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+/* Barbearia alura - cabeçalho */
+    .cabeçalho {
+        width: 267%;
+    }
+        .logo {
+            width: 160px;
+        }
+
+/* Barbearia alura - Rodape */
+    .rodape, .caixa-apresentação {
+        width: 272%;
+    }
+        .logo-rodape {
+            width: 180px;
+        }
+
+        .icon {
+            font-size: 36px;
+            padding: 0 20px;
+        }
+
+        .copy p {
+            
+            font-size: 26px;
+            margin-top: 30px;
+        }       
+
+/* Barbearia alura - apresentação */
+    .apresentação p {
+        font-size: 35px;
+    }   
+    
+/* Barbearia alura - slides */
+    .content {
+        position: absolute;
+        left: 135%;
+        transform: translate(-50%);
+    }
+
+    .navigation {
+        position: absolute;
+        left: 135%;
+        bottom: -134%;
+        transform: translate(-50%);
+        display: flex;
+    }
+
+/* Barbearia alura - slides */
+    .mapa p {
+        font-size: 35px;
+        padding: 0 auto;
+        text-align: center;
+    }
+
+    .mapa-conteudo {
+        display: flex;
+        align-items:center;
+        flex-direction: column;
+        margin: 0 auto;
+        padding-left: 38px;
+        width: 900px;
+    }   
+
+/* Barbearia alura - slides */
+    .beneficios {
+        margin: 50px auto;
+        text-align: center;
+    }
+
+    .beneficios h3 {
+        position: relative;
+        left: 300px;
+        margin-bottom: 30px;
+    }
+
+    .conteudo-beneficio {
+        padding: 5px;
+        display: block;
+        text-align: center;
+    }
+        .lista-beneficio {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 700px;
+
+        }
+            .itens {
+                position: relative;
+                left: 180px;
+                font-size: 35px;
+                border-bottom: none;
+            }
+
+        .imgBeneficios {
+            width: 800px;
+            margin: 40px auto;
+            position: relative;
+            left: 27%;
+        }
+/* Barbearia alura - video */
+    .caixa-do-video {
+        width: 272%;
+        height: 600px;
+    }
+
+        .mostrando-nosso-dia {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: top; 
+
+
+        }         
+            .titulo-video {
+                font-size: 35px;
+            }
+
+            .paragrago-video {
+                font-size: 35px;
+            }
+
+            .botão {
+                position: relative;
+                top: 50px;
+                right: 25%;
+                width: 200px;
+                font-size: 100px;
+            }
+                .botão a {
+                    position: relative;
+                    bottom: 60px;
+                    font-size: 20px;
+                }
+}
